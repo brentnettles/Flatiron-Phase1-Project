@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.about {
+    padding: 0;
+    text-align: center;
+    position: absolute;  
+    bottom: 0px;
+    width: 100%; 
+}
+.footer-container {
+    padding: 50px 0;
+    background-color: #141621;
+    color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://s33855.pcdn.co/wp-content/uploads/2023/04/chair-on-food-court-in-department-store.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container h1 {
+    font-size: 36px;
+    font-family: 'Protest Revolution', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-container p {
+    font-size: 20px;
+    font-family: 'Protest Revolution', sans-serif;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-text {
+    text-align: left;
+    margin-right: 20px;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
