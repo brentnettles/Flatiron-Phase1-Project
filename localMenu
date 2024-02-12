@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <script defer="" src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1154.0" data-gr-ext-installed="">
+    <section id="menuSection">
+      Menu
+      <div class="menu-item">
+        <h2>Huitres ou Palourdes du Jour</h2>
+        <h2>Oysters or clams of the day</h2>
+        <h2>Price: Market Price</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Soupe de Poisson Traditionnelle</h2>
+        <h2>Marseille-style fish soup with rouille, and gruyére</h2>
+        <h2>Price: $22.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Soup à lOignon Classique</h2>
+        <h2>Onion soup gratinèe</h2>
+        <h2>Price: $18.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Cocktail de Crevettes Grillées à la Marocaine</h2>
+        <h2>Grilled shrimp cocktail, Moroccan-style</h2>
+        <h2>Price: $28.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salmon Tartare</h2>
+        <h2></h2>
+        <h2>Price: $28.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Ahi Tuna Tartare</h2>
+        <h2></h2>
+        <h2>Price: $32.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Moroccan Merguez</h2>
+        <h2>Two grilled Moroccan lamb sausages served on a bed of polenta</h2>
+        <h2>Price: $22.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>American Crab Cake</h2>
+        <h2>With a coulis of fumé de poisson</h2>
+        <h2>Price: $28.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Sardines Grillées á la Tropeziénne</h2>
+        <h2>Grilled sardines, St. Tropez-style</h2>
+        <h2>Price: $28.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Moules Mariniére Traditionnelle</h2>
+        <h2>Steamed mussels in white wine shallot sauce served with frites</h2>
+        <h2>Price: $36.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Grilled Octopus with Pommes Risselées</h2>
+        <h2>With roasted potatoes, olive oil, garlic and rosemary</h2>
+        <h2>Price: $36.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Foie Gras Maison</h2>
+        <h2>Pan-seared fresh goose liver with apple and onion compote</h2>
+        <h2>Price: $38.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Paté Maison: Mousse de Foie de Canard au Poivre Rose</h2>
+        <h2>Duck liver mousse triangles with cornichons and pink pepper</h2>
+        <h2>Price: $18.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Escargots de Bourgogne</h2>
+        <h2>Snails, Burgundy-style</h2>
+        <h2>Price: $22.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade de Betteraves et Chȇvre</h2>
+        <h2>Roasted beets and goat cheese with a balsamic vinaigrette</h2>
+        <h2>Price: $24.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade de Mesclun</h2>
+        <h2>Mesclun salad with house vinaigrette</h2>
+        <h2>Price: $11.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade d'Asperges Pochés</h2>
+        <h2>Blanced asparagus with mixed greens with a mustard vinaigrette</h2>
+        <h2>Price: $26.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade d'Endives et Roquefort</h2>
+        <h2>Endive salad with blue cheese and walnuts</h2>
+        <h2>Price: $26.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade Frisée aux Lardons</h2>
+        <h2>
+          Frisée salad with diced bacon, blue cheese and a poached egg on top
+        </h2>
+        <h2>Price: $28.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade d'Arugala et Fenouil</h2>
+        <h2>Arugala salad with shaved fennel and parmesan</h2>
+        <h2>Price: $22.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade Nicoise Traditionelle</h2>
+        <h2>With fresh, rare tuna</h2>
+        <h2>Price: $38.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade d'artichaux avec cœur de palmier et asperges</h2>
+        <h2>Fresh artichoke, hearts of palm and asparagus</h2>
+        <h2>Price: $26.00</h2>
+      </div>
+      <div class="menu-item">
+        <h2>Salade Lucien</h2>
+        <h2>
+          Endive, arugula, frisée, mesclun, artichoke, tomato, and a hard boiled
+          egg
+        </h2>
+        <h2>Price: N/A</h2>
+      </div>
+    </section>
+    <h2 price="">Price :</h2>
+    <h2 description="">Description</h2>
+    <h2 dishname="">Name</h2>
+  </body>
+</html>
