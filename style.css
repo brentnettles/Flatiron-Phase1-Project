@@ -24,6 +24,7 @@ body {
 
 .menu-item h2 {
   font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 5px; /* Add some space between elements */
 }
 
 .menu-item h2.price {
@@ -33,4 +34,13 @@ body {
 /* Add a subtle shadow to the white text to make it stand out */
 .menu-item h2 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Update the background color and padding for the menu sections */
+.Appetizers,
+.Mains,
+.Desserts {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 20px; /* Add some space between sections */
 }
