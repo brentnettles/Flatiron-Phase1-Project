@@ -7,14 +7,14 @@ fetch('http://localhost:3000/menu')
   })
   .then(menuData => {
     console.log(menuData);
-    // Assuming menuData is an object with keys "Appetizers", "Mains", "Desserts"
+    
     const categories = ["Appetizers", "Mains", "Desserts"];
     categories.forEach(category => {
       if (menuData.hasOwnProperty(category)) {
-        // Call populateMenuItems for each category
         populateMenuItems(menuData[category]);
       } else {
         console.error(`Category '${category}' not found in menu data.`);
+        console.log(menuData);
       }
     });
   })
@@ -42,7 +42,7 @@ const reviews = [];
 
 // Function to handle form submission
 function handleFormSubmit(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    event.preventDefault(); 
     
     // Get form data
     let name = document.getElementById('name').value;
@@ -55,14 +55,14 @@ function handleFormSubmit(event) {
       return;
     }
     
-    // Create a review object
+    // Create object from form submit
     const review = {
       name: name,
       menuItem: menuItem,
       rating: rating
     };
     
-    // POST the review data to the server
+    // POST the review data to the server - to be viewed on site after POST
     fetch('http://localhost:3000/reviews', {
       method: 'POST',
       headers: {
@@ -86,6 +86,7 @@ function handleFormSubmit(event) {
     });
 }
 
+
 function displayReviews() {
   fetch('http://localhost:3000/reviews')
     .then(response => {
@@ -95,7 +96,7 @@ function displayReviews() {
       return response.json();
     })
     .then(reviews => {
-      // Display reviews on the page
+      // Display reviews on the page (empty HTML)
       const reviewsContainer = document.getElementById('reviewsContainer');
       reviewsContainer.innerHTML = ''; 
       reviews.forEach(review => {
@@ -103,16 +104,15 @@ function displayReviews() {
         reviewElement.textContent = `Name: ${review.name}, Item: ${review.menuItem}, Rating: ${review.rating}`;
         reviewsContainer.appendChild(reviewElement);
       });
+      
     })
     .catch(error => {
       console.error('Error fetching or rendering reviews:', error);
     });
 }
-
 // Call displayReviews initially to populate reviews on page load
 displayReviews();
 
 const reviewForm = document.getElementById('reviewForm');
-
-// Add an event listener to the form's submit event
 reviewForm.addEventListener('submit', handleFormSubmit);
+console.log(reviews);
