@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reservation Request Form</title>
+    <title>Reservations</title>
     <style>
       .hidden {
         display: none;
@@ -12,17 +12,13 @@
   </head>
   <body>
     <div id="reservationForm">
-      <h2>Reservation Request Form</h2>
-      <form
-        action="mailto:restaurant@example.com"
-        method="post"
-        enctype="text/plain"
-      >
+      <h2>Reservation Request</h2>
+      <form action="verybeigenyc@gmail.com" method="post" enctype="text/plain">
         <label for="name">Name:</label><br />
         <input type="text" id="name" name="name" required /><br />
         <label for="email">Email:</label><br />
         <input type="email" id="email" name="email" required /><br />
-        <label for="party">Party (Number of people):</label><br />
+        <label for="party">Guest:</label><br />
         <input type="number" id="party" name="party" min="1" required /><br />
         <label for="date">Date:</label><br />
         <input type="date" id="date" name="date" required /><br />
@@ -37,7 +33,7 @@
           <option value="20:00">8:00 PM</option>
           <option value="20:30">8:30 PM</option></select
         ><br /><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Send Request" />
       </form>
     </div>
 
