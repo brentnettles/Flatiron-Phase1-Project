@@ -80,5 +80,19 @@
         
         }
       ]
-    }
+    },
+  
+  
+    "reviews":  [
+      {
+        "name": "John Doe",
+        "menuItem": "Salmon Tartare",
+        "rating": "5"
+      },
+      {
+        "name": "Jane Doe",
+        "menuItem": "Beef Tartare",
+        "rating": "5"
+      }
+    ]
   }
