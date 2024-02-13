@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fetch('http://localhost:3000/menu')
   .then(response => {
     if (!response.ok) {
@@ -101,3 +102,10 @@ function renderCategory(categoryItems, categoryClass) {
 
 
 
+=======
+// console.log("Hello World")
+
+for (let initialExpression = 0; initialExpression < 5; initialExpression++) {
+    console.log(initialExpression)
+}
+>>>>>>> Nail
