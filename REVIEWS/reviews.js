@@ -110,7 +110,7 @@ function displayReviews() {
       console.error('Error fetching or rendering reviews:', error);
     });
 }
-// Call displayReviews initially to populate reviews on page load
+// Call displayReviews 
 displayReviews();
 
 const reviewForm = document.getElementById('reviewForm');

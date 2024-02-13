@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Request Form</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reservationForm">
+      <h2>Reservation Request Form</h2>
+      <form
+        action="mailto:restaurant@example.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="party">Party (Number of people):</label><br />
+        <input type="number" id="party" name="party" min="1" required /><br />
+        <label for="date">Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+        <label for="time">Time:</label><br />
+        <select id="time" name="time" required>
+          <option value="17:00">5:00 PM</option>
+          <option value="17:30">5:30 PM</option>
+          <option value="18:00">6:00 PM</option>
+          <option value="18:30">6:30 PM</option>
+          <option value="19:00">7:00 PM</option>
+          <option value="19:30">7:30 PM</option>
+          <option value="20:00">8:00 PM</option>
+          <option value="20:30">8:30 PM</option></select
+        ><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div id="confirmationMessage" class="hidden">
+      <p>
+        Thank you for your reservation request! We will get back to you shortly.
+      </p>
+    </div>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("reservationForm").classList.add("hidden");
+        document
+          .getElementById("confirmationMessage")
+          .classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>
