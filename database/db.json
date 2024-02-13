@@ -1,0 +1,127 @@
+{
+  "menu": {
+    "Appetizers": [
+      {
+        "name": "Huitres ou Palourdes du Jour",
+        "description": "Oysters or clams of the day",
+        "price": "Market Price"
+      },
+      {
+        "name": "Soupe de Poisson Traditionnelle",
+        "description": "Marseille-style fish soup with rouille, and gruyére",
+        "price": "$22.00"
+      },
+      {
+        "name": "Soup à lOignon Classique",
+        "description": "Onion soup gratinèe",
+        "price": "$18.00"
+      },
+      {
+        "name": "Cocktail de Crevettes Grillées à la Marocaine",
+        "description": "Grilled shrimp cocktail, Moroccan-style",
+        "price": "$28.00"
+      },
+      {
+        "name": "Salmon Tartare",
+        "price": "$28.00"
+      },
+      {
+        "name": "Ahi Tuna Tartare",
+        "price": "$32.00"
+      }
+    ],
+    "Mains": [
+      {
+        "name": "Moroccan Merguez",
+        "description": "Two grilled Moroccan lamb sausages served on a bed of polenta",
+        "price": "$22.00"
+      },
+      {
+        "name": "American Crab Cake",
+        "description": "With a coulis of fumé de poisson",
+        "price": "$28.00"
+      },
+      {
+        "name": "Sardines Grillées á la Tropeziénne",
+        "description": "Grilled sardines, St. Tropez-style",
+        "price": "$28.00"
+      },
+      {
+        "name": "Moules Mariniére Traditionnelle",
+        "description": "Steamed mussels in white wine shallot sauce served with frites",
+        "price": "$36.00"
+      },
+      {
+        "name": "Grilled Octopus with Pommes Risselées",
+        "description": "With roasted potatoes, olive oil, garlic and rosemary",
+        "price": "$36.00"
+      },
+      {
+        "name": "Foie Gras Maison",
+        "description": "Pan-seared fresh goose liver with apple and onion compote",
+        "price": "$38.00"
+      },
+      {
+        "name": "Paté Maison: Mousse de Foie de Canard au Poivre Rose",
+        "description": "Duck liver mousse triangles with cornichons and pink pepper",
+        "price": "$18.00"
+      }
+    ],
+    "Desserts": [
+      {
+        "name": "Crème Brûlée",
+        "description": "Classic French custard with a caramelized sugar crust",
+        "price": "$12.00"
+      },
+      {
+        "name": "Tarte Tatin",
+        "description": "Upside-down caramelized apple tart",
+        "price": "$14.00"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": "b883",
+      "name": "Brento",
+      "menuItem": "Soupe de Poisson Traditionnelle",
+      "rating": "4"
+    },
+    {
+      "id": "b5b9",
+      "name": "Jerry J.",
+      "menuItem": "Foie Gras Maison",
+      "rating": "5"
+    },
+    {
+      "id": "9662",
+      "name": "Nail O",
+      "menuItem": "Moroccan Merguez",
+      "rating": "5"
+    },
+    {
+      "id": "82e9",
+      "name": "Mike D.",
+      "menuItem": "American Crab Cake",
+      "rating": "4"
+    },
+    {
+      "id": "e92c",
+      "name": "Sarah S",
+      "menuItem": "Grilled Octopus with Pommes Risselées",
+      "rating": "5"
+    },
+    {
+      "id": "03af",
+      "name": "Bob B",
+      "menuItem": "Ahi Tuna Tartare",
+      "rating": "5"
+    },
+    {
+      "id": "f45f",
+      "name": "Nail",
+      "menuItem": "American Crab Cake",
+      "rating": "5"
+    }
+  ]
+}

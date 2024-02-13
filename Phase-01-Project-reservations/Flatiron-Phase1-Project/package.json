@@ -1,0 +1,15 @@
+{
+  "name": "flatiron-phase1-project",
+  "version": "1.0.0",
+  "description": "Brent &amp; Nail phase one project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
