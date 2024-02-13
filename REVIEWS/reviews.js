@@ -35,33 +35,33 @@ function populateMenuItems(menuItems) {
         option.textContent = item.name; // Set the text content to the name of the menu item
         menuItemSelect.appendChild(option); // Append the option to the select element
     });
-  }
+}
 
-  // Define an array to store submitted reviews
+// Define an array to store submitted reviews
 const reviews = [];
-
-addEventListener(submit).
-
 
 // Function to handle form submission
 function handleFormSubmit(event) {
     event.preventDefault(); // Prevent the form from submitting normally
-    console.log(event);
-  
+    
     // Get form data
     let name = document.getElementById('name').value;
     let menuItem = document.getElementById('menuItem').value;
     let rating = document.getElementById('rating').value;
   
+    // Validate form data
+    if (!name || !menuItem || !rating) {
+      console.error('Please fill out all fields.');
+      return;
+    }
+    
     // Create a review object
     const review = {
       name: name,
       menuItem: menuItem,
       rating: rating
     };
-    console.log(review)
     
-  
     // POST the review data to the server
     fetch('http://localhost:3000/reviews', {
       method: 'POST',
@@ -84,42 +84,35 @@ function handleFormSubmit(event) {
     .catch(error => {
       console.error('Error submitting review:', error);
     });
-  }
-  
-  function displayReviews() {
-    fetch('http://localhost:3000/reviews')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(reviews => {
-        // Display reviews on the page
-        const reviewsContainer = document.getElementById('reviewsContainer');
-        reviewsContainer.innerHTML = ''; 
-        reviews.forEach(review => {
-          const reviewElement = document.createElement('div');
-          reviewElement.textContent = `Name: ${review.name}, Item: ${review.menuItem}, Rating: ${review.rating}`;
-          reviewsContainer.appendChild(reviewElement);
-        });
-      })
-      .catch(error => {
-        console.error('Error fetching or rendering reviews:', error);
+}
+
+function displayReviews() {
+  fetch('http://localhost:3000/reviews')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(reviews => {
+      // Display reviews on the page
+      const reviewsContainer = document.getElementById('reviewsContainer');
+      reviewsContainer.innerHTML = ''; 
+      reviews.forEach(review => {
+        const reviewElement = document.createElement('div');
+        reviewElement.textContent = `Name: ${review.name}, Item: ${review.menuItem}, Rating: ${review.rating}`;
+        reviewsContainer.appendChild(reviewElement);
       });
-  }
-  
-  
-  // Call displayReviews initially to populate reviews on page load
-  displayReviews();
+    })
+    .catch(error => {
+      console.error('Error fetching or rendering reviews:', error);
+    });
+}
 
-  const reviewForm = document.getElementById('reviewForm');
+// Call displayReviews initially to populate reviews on page load
+displayReviews();
 
-  // Add an event listener to the form's submit event
-  reviewForm.addEventListener('submit', handleFormSubmit);
-  
-  // Function to handle form submission
-  function handleFormSubmit(event) {
-      event.preventDefault();
-  }
-  
+const reviewForm = document.getElementById('reviewForm');
+
+// Add an event listener to the form's submit event
+reviewForm.addEventListener('submit', handleFormSubmit);
