@@ -1,0 +1,548 @@
+* {
+    font-family: 'Lora', serif;
+}
+ 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo styling with animation */
+#logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite alternate;
+    text-align: center;
+    background-color: lightgray;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Animation for Navigation Links */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav a {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* Reset animation for active/current link */
+nav a:hover {
+    animation:none;
+}
+
+
+#home-section {
+    background-image: url(assets/background_03.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.together {
+    display: flex;
+}
+
+#reservation-section,
+#about-section {
+    height: 100vh;
+    width: 50%;
+}
+
+#reservation-section {
+    background-image: url(assets/background_02.jpg);
+    background-size: cover;
+   
+}
+
+#about-section {
+    background-image: url(assets/about.jpg);
+    background-size: cover;
+}
+#review-section {
+    background-image: url(assets/background_04.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+#menu-section {
+    background-image: url(assets/background_1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-menu {
+    align-self: flex-start;
+    height: 100vh;
+    width: 100%;
+}
+
+#about-menu h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: aliceblue;
+}
+#about-menu p {
+    align-self:flex-start;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+
+}
+#main-food {
+    align-self: flex-start;
+    height: 100vh;
+    width: 100%;
+}
+#main-food:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#main-food h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+    color: aliceblue;
+}
+
+
+
+#appetizer {
+    align-self: center;
+    height: 100vh;
+    width: 100%;
+   
+}
+#appetizer:hover {
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+#appetizer h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+    color: aliceblue;
+}
+
+#dessert {
+    align-self: flex-end;
+    height: 100vh;
+    width: 100%;
+}
+#dessert:hover {
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+#dessert h1 {
+        text-align: center;
+        margin-top: 2.5rem;
+        color: aliceblue;
+    }
+
+.chatbot-toggler {
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    background: #535254;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30%;
+    transition: all 0.2s ease;
+}
+
+.show-chatbot .chatbot-toggler {
+    transform: rotate(90deg);
+}
+
+.chatbot-toggler span {
+    position: absolute;
+}
+
+.show-chatbot .chatbot-toggler span:first-child,
+.chatbot-toggler span:last-child {
+    opacity: 0;
+}
+
+.show-chatbot .chatbot-toggler span:last-child {
+    opacity: 1;
+}
+
+.chatbot {
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 420px;
+    transform: scale(0.5);
+    opacity: 0;
+    pointer-events: none;
+    background: #fff;
+    border-radius: 15px;
+    transform-origin: bottom right;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.2),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
+}
+
+.show-chatbot .chatbot {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.chatbot header {
+    background: #535254;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.chatbot header h2 {
+    color: aliceblue;
+    font-size: 1.4rem;
+}
+
+.chatbot header span {
+    position: absolute;
+    right: 20px;
+    top: 4%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    transform: translateY(-60%);
+}
+
+.chatbot .chatbox {
+    height: 510px;
+    overflow-y: auto;
+    padding: 30px 20px 70px;
+}
+
+.chatbox .chat {
+    display: flex;
+}
+
+.chatbox .incoming span {
+    height: 32px;
+    width: 32px;
+    align-self: flex-end;
+    background: #eae7ee;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 5px;
+    margin: 0 10px 7px 0;
+}
+
+.chatbox .outgoing {
+    margin: 20px 0;
+    justify-content: flex-end;
+}
+
+.chatbot .chat p {
+    max-width: 75%;
+    background: #535254;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.chatbox .incoming p {
+    color: #000;
+    background: rgb(184, 188, 192);
+    border-radius: 10px 10px 10px 0px;
+}
+
+.chatbot .chat-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 110px;
+    gap: 5px;
+    display: flex;
+}
+
+.chat-input textarea {
+    height: 55px;
+    width: calc(100% - 50px); /* Adjusted width to fit Send button */
+    border: none;
+    outline: none;
+    max-height: 180px;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+}
+
+.chat-input span {
+    color: #535254;
+    font-size: 1.35rem;
+    cursor: pointer;
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    visibility: hidden;
+}
+
+.chat-input textarea:valid ~ span {
+    visibility: visible;
+}
+
+@media (max-width: 490px) {
+    .chatbot {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .chatbot .chatbox {
+        height: 90%;
+    }
+
+    .chatbot header span {
+        display: block;
+    }
+}
+
+/* About Section Styles */
+
+#about-section {
+    animation: fadeIn 1s ease forwards; 
+}
+
+.about-us:hover {
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.2),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.about-us h1 {
+    font-size: 2rem; /* Increase font size */
+    color: whitesmoke; /* Adjust text color */
+    margin-bottom: 20px; /* Add some margin for spacing */
+    animation: slideIn 1s ease forwards; /* Add slide-in animation */
+}
+
+
+.about-us p {
+    padding: 5px 5px;
+    font-size: 1.1rem; 
+    color: white; 
+    animation: slideIn 1s ease forwards; 
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px; /* Add some margin for spacing */
+    animation: slideIn 1s ease forwards; /* Add slide-in animation */
+    border: 3px solid whitesmoke
+}
+
+.address:hover {
+    box-shadow: 0 0 10px rgba(40, 37, 37, 0.5);
+    border-color: #666 ;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.address-text {
+    width: 60%; /* Adjust width */
+    animation: slideIn 1s ease forwards;
+    font-size: larger;
+    font-weight: 100;
+    color: whitesmoke; 
+}
+
+.map {
+
+    animation: slideIn 1s ease forwards; 
+}
+
+
+
+/* Animation Keyframes */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#review-section h1 {
+    color: white;
+    align-self: flex-start;
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+
+#review-section {
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    padding: 50px; /* Add padding for spacing */
+    display: flex;
+    flex-direction: row; /* Change flex direction to row */
+    align-items: center;
+    justify-content: left; /* Remove the comma */
+    width: 100%;
+    height: 90vh;
+}
+
+
+
+#reviewForm {
+    width: 80%; /* Set width of form */
+    max-width: 600px; /* Limit maximum width */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ddd; /* Add border for visual separation */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    background-color: #ccc;
+}
+
+#reviewForm label {
+    display: block;
+    margin-bottom: 10px; /* Add margin below each label */
+    
+}
+
+#reviewForm input[type="text"],
+#reviewForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+#reviewForm select {
+    appearance: none;
+}
+
+#reviewForm input[type="submit"] {
+    background-color: whitesmoke; /* Add missing semicolon */
+    color: black; /* Set text color for submit button */
+    border: none; /* Remove border for submit button */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px 20px; /* Adjust padding for submit button */
+    cursor: pointer;
+}
+
+#reviewForm input[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+#reviewsContainer {
+    flex-direction: column;
+    font-size: 30px;
+    color: whitesmoke;
+    border: 10px solid #ddd;
+    top: 10px;
+    width: 800%; /* Set width of reviews container */
+    max-width: 600px; /* Limit maximum width */
+    margin-top: 30px; /* Add margin on top for spacing */
+}
+
+#reviewsContainer:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
+}
+

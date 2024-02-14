@@ -1,0 +1,178 @@
+{
+  "menu": {
+    "Appetizers": [
+      {
+        "name": "Huitres ou Palourdes",
+        "description": "Oysters or clams",
+        "price": "$20.00"
+      },
+      {
+        "name": "Soupe de Poisson",
+        "description": "Fish soup with rouille, and gruyére",
+        "price": "$22.00"
+      },
+      {
+        "name": "Soup à lOignon",
+        "description": "Onion soup gratinèe",
+        "price": "$18.00"
+      },
+      {
+        "name": "Cocktail de Crevettes",
+        "description": "Grilled shrimp cocktail, Moroccan-style",
+        "price": "$28.00"
+      },
+      {
+        "name": "Salmon Tartare",
+        "description": "Diced, seasoned, raw, garnished",
+        "price": "$28.00"
+      },
+      {
+        "name": "Ahi Tuna Tartare",
+        "description": "Raw ahi tuna finely diced with flavours",
+        "price": "$32.00"
+      },
+      {
+        "name": "Escargots Bourguignonne",
+        "description": "Burgundy-style snails with garlic-herb butter",
+        "price": "$24.00"
+      }
+    ],
+    "Mains": [
+      {
+        "name": "Moroccan Merguez",
+        "description": "Grilled Moroccan lamb sausages",
+        "price": "$22.00"
+      },
+      {
+        "name": "American Crab Cake",
+        "description": "With a coulis of fumé de poisson",
+        "price": "$28.00"
+      },
+      {
+        "name": "Sardines Grillées",
+        "description": "Grilled sardines, St. Tropez-style",
+        "price": "$28.00"
+      },
+      {
+        "name": "Moules Mariniére",
+        "description": "Steamed mussels in white wine",
+        "price": "$36.00"
+      },
+      {
+        "name": "Grilled Octopus",
+        "description": "With roasted potatoes, olive oil, garlic",
+        "price": "$36.00"
+      },
+      {
+        "name": "Foie Gras Maison",
+        "description": "Pan-seared fresh goose liver with apple",
+        "price": "$38.00"
+      },
+      {
+        "name": "Paté Maison:",
+        "description": "Duck liver mousse triangles with cornichons",
+        "price": "$18.00"
+      }
+    ],
+    "Desserts": [
+      {
+        "name": "Crème Brûlée",
+        "description": "Classic French crust",
+        "price": "$12.00"
+      },
+      {
+        "name": "Tarte Tatin",
+        "description": "Upside-down caramelized apple tart",
+        "price": "$14.00"
+      },
+      {
+        "name": "Profiteroles",
+        "description": "Choux pastry filled with ice cream and topped with chocolate sauce",
+        "price": "$16.00"
+      },
+      {
+        "name": "Chocolate Mousse",
+        "description": "Silky smooth chocolate mousse topped with whipped cream",
+        "price": "$14.00"
+      },
+      {
+        "name": "Lemon Tart",
+        "description": "Tangy lemon filling in a flaky pastry crust",
+        "price": "$14.00"
+      },
+      {
+        "name": "Panna Cotta",
+        "description": "Italian dessert of sweetened cream thickened with gelatin",
+        "price": "$14.00"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": "b883",
+      "name": "Brento",
+      "menuItem": "Soupe de Poisson Traditionnelle",
+      "rating": "4"
+    },
+    {
+      "id": "b5b9",
+      "name": "Jerry J.",
+      "menuItem": "Foie Gras Maison",
+      "rating": "5"
+    },
+    {
+      "id": "9662",
+      "name": "Nail O",
+      "menuItem": "Moroccan Merguez",
+      "rating": "5"
+    },
+    {
+      "id": "82e9",
+      "name": "Mike D.",
+      "menuItem": "American Crab Cake",
+      "rating": "4"
+    },
+    {
+      "id": "e92c",
+      "name": "Sarah S",
+      "menuItem": "Grilled Octopus with Pommes Risselées",
+      "rating": "5"
+    },
+    {
+      "id": "03af",
+      "name": "Bob B",
+      "menuItem": "Ahi Tuna Tartare",
+      "rating": "5"
+    },
+    {
+      "id": "f45f",
+      "name": "Nail",
+      "menuItem": "American Crab Cake",
+      "rating": "5"
+    },
+    {
+      "id": "96e4",
+      "name": "Nail Osmanli",
+      "menuItem": "Salmon Tartare",
+      "rating": "5"
+    },
+    {
+      "id": "4ac6",
+      "name": "Nail🧑‍🦲",
+      "menuItem": "Soupe de Poisson🍽",
+      "rating": "4stars"
+    },
+    {
+      "id": "95ac",
+      "name": "Sexy Customer🧑‍🦲",
+      "menuItem": "American Crab Cake🍽",
+      "rating": "5 stars"
+    },
+    {
+      "id": "7618",
+      "name": "Hello🧑‍🦲",
+      "menuItem": "American Crab Cake🍽",
+      "rating": "5 stars"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#menu-section">Menu</a></li>
+            <li><a href="#reservation-section">Rerservation</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#review-section">Reviews</a></li>
+        </ul>
+    </nav>
+    <section id="logo">
+        <img src="assets/whiteLogo.png" alt="logo">
+    </section>
+    <section id="home-section">
+        
+        <h1>This section is for Home</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero fugiat quod nulla perferendis aspernatur ratione delectus inventore quos consequuntur nihil sit, iusto, numquam excepturi voluptatibus error nam minima. Reiciendis, repellendus?</p>
+    </section>
+    <section id="menu-section">
+        <div id="about-menu">
+        <h1>Once Chef Said</h1>
+        <p>As a French restaurant, we are committed to providing an authentic culinary experience that evokes the rich and refined flavors of traditional French cuisine. Each dish we serve is carefully crafted to capture the essence of French gastronomy, with a focus on balancing flavors and using high-quality ingredients.
+
+            Our dishes are characterized by a diverse and delicious flavor profile, ranging from fresh aromatic herbs to subtle spices, rich sauces, and delicate cheese nuances. From the crunch of freshly baked baguettes to the melt-in-your-mouth texture of Burgundy snails, every bite takes you on a journey to the heart of France.
+            <br>
+            
+            Whether you're enjoying a classic dish like coq au vin or exploring new flavors with our seasonal offerings, our cuisine is designed to awaken your senses and leave a lasting impression. Experience the magic of French cooking on every plate, where each ingredient tells a story of tradition, passion, and refinement.At our French restaurant, we take pride in curating an immersive dining journey that celebrates the essence of French culinary heritage. Each meticulously prepared dish showcases a symphony of flavors, meticulously crafted to tantalize your taste buds and transport you to the vibrant streets of France. From the robust aroma of freshly brewed coffee to the delicate sweetness of crème brûlée, every aspect of our menu reflects our unwavering dedication to authenticity and excellence. Whether you're savoring a hearty beef bourguignon or indulging in the decadence of a perfectly baked soufflé, every bite is a testament to our commitment to culinary artistry. <br>Join us as we invite you to embark on a gastronomic adventure that honors tradition, ignites passion, and leaves an indelible mark on your palate. Welcome to a world where every dish is a masterpiece, and every meal is an unforgettable experience.</p>
+    </div>
+        <div id="main-food">
+            <h1>Main Food</h1>
+            <ul id="mainul"></ul>
+        </div>
+        <div id="appetizer">
+            <h1>Appetizer</h1>
+            <ul id="appul"></ul>
+        </div>
+        <div id="dessert">
+            <h1>Dessert</h1>
+            <ul id="desul"></ul>
+        </div>
+    </section>
+    <section class="together">
+        <div id="about-section">
+            
+                <div class="about-us">
+                <h1>About Us</h1>
+                <p id="history">Greetings from Le Fur Plat! As the owner, it's with great pride that I share the illustrious history of our cherished restaurant. Since its establishment in 1975 in Lyon, France, Le Fur Plat has epitomized the essence of French culinary artistry. Named in honor of my grandfather, Chef Henri Le Fur, our establishment has evolved from a humble bistro to a beacon of gastronomic excellence, earning accolades including prestigious Michelin stars.
+
+                    Our commitment to culinary mastery is unwavering, rooted in the meticulous selection of locally sourced ingredients and the fusion of traditional techniques with innovative flavors. Each dish crafted in our kitchen tells a story of passion and dedication, inviting guests to embark on a journey of sensory delight.
+                    
+                    With warm hospitality and an ambiance reminiscent of a classic French brasserie, Le Fur Plat continues to captivate discerning palates and cultivate lasting memories. Join us as we celebrate the timeless art of French cuisine and the legacy of Le Fur Plat.We are passionate about serving delicious meals made from the freshest ingredients.</p>
+                    </div>
+                <div class="address">
+                    <div class="address-text">
+                        <p id="visit"><strong>Visit Us</strong></p>
+                        <p id="st">11 Broadway 2nd floor</p>
+                        <p id="city">NewYork, NY, 10004</p>
+                        <p id="country">United States</p>
+                    </div>
+                        <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.578136318289!2d-74.01390400000003!3d40.70528779999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a5c6512a7d%3A0xd0cd5a687aea106e!2sFlatiron%20School!5e0!3m2!1sen!2sus!4v1707449278886!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                </div>
+                <!-- <footer class="footer-container"></footer>
+            </footer>   -->
+        </div>
+
+
+    <div id="reservation-section">
+        <h1>This section is for Rerservation</h1>
+     </div>
+    </section>
+    
+    
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">Help</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">🧑‍🍳</span>
+                <p>Hi There 🫷 <br> How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined" >Send</span>
+        </div>
+    </div>
+    <section id="review-section">
+        <div id="reviewsContainer"></div>
+        
+        <h1>Restaurant Review Form</h1>
+        <form id="reviewForm">
+          <label for="name">Enter your name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+    
+          <label for="menuItem">Select an item from the menu:</label><br />
+          <select id="menuItem" name="menuItem">
+            <option value="" disabled selected>Select an item</option>
+            <!-- from JSON SERVER/> --></select
+          ><br /><br />
+    
+          <label for="rating">Rate:</label><br />
+          <select id="rating" name="rating">
+            <option value="1">☆</option>
+            <option value="2">☆☆</option>
+            <option value="3">☆☆☆</option>
+            <option value="4">☆☆☆☆</option>
+            <option value="5">☆☆☆☆☆</option></select
+          ><br /><br />
+    
+          <input type="submit" value="Submit Review" />
+        </form>
+        <div id="reviewsContainer"></div>
+    </section>
+    <script src="index.js"></script>
+
+
+
+   
+</body>
+</html>
