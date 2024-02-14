@@ -126,8 +126,8 @@ function handleFormSubmit(event) {
     // Create object from form submit
     const review = {
       name: name,
-      menuItem: "rated" + menuItem, 
-      rating: "with " + rating + " stars"
+      menuItem: menuItem, 
+      rating: rating 
     };
     
     
@@ -172,7 +172,7 @@ function displayReviews() {
       reviewsContainer.innerHTML = ''; 
       reviews.forEach(review => {
         const reviewElement = document.createElement('div');
-        reviewElement.textContent = `Name: ${review.name}, Item: ${review.menuItem}, Rating: ${review.rating}`;
+        reviewElement.textContent = ` 🤌  ${review.name} gave the ${review.menuItem} a rating of ${review.rating} stars 🌟`;
         reviewsContainer.appendChild(reviewElement);
       });
       
@@ -285,7 +285,7 @@ function showDessert (menuData) {
     })
 }
 
-//RES 
+//RESERVATION FORM EVENT LISTENER
 
       document.getElementById("reservationForm")
         .addEventListener("submit", function (e) {

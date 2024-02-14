@@ -12,7 +12,7 @@
     <style>
       .hidden {
         display: none;
-      }
+    }
     </style>
     <style>
       /* @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
@@ -135,11 +135,11 @@
             </footer>   -->
       </div>
 
-      <div id="reservation-section">
-        <h1>This section is for Rerservation</h1>
+      /* <div id="reservation-section"> */
+      
       
     <section id="reservations">
-      <h2>Reservations</h2>
+     
       <div class="section-content collapsed">
         <div class="container">
           <div class="section-container">
@@ -226,10 +226,9 @@
         <h1>What did you think?</h1>
         <label for="name">Enter your name:</label><br />
         <input type="text" id="name" name="name" required /><br /><br />
-
         <label for="menuItem">Select an item from the menu:</label><br />
         <select id="menuItem" name="menuItem">
-          <option value="" disabled selected>Select an item</option>
+          <option value=" " disabled selected>Select an item</option>
           <!-- from JSON SERVER/> --></select
         ><br /><br />
 
@@ -244,7 +243,10 @@
 
         <input type="submit" value="Submit Review" />
       </form>
-      <div id="reviewsContainer"></div>
+      <div id="reviewsContainer">
+    <h1>Guest Reviews</h1> 
+    
+</div>
     </section>
     <script src="index.js"></script>
   </body>
