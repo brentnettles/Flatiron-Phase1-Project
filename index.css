@@ -13,14 +13,14 @@ body {
 
 /* Logo styling with animation */
 #logo {
-    font-size: 20px;
+    /* font-size: 20px;
     font-weight: bold;
     color: #333;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: pulse 2s infinite alternate;
-    text-align: center;
-    background-color: lightgray;
+    letter-spacing: 2px; */
+    /* animation: pulse 2s infinite alternate; */
+    /* image-orientation: center; */
+    /* background-color: lightgray; */
 }
 
 @keyframes pulse {
@@ -118,16 +118,15 @@ nav a:hover {
     background-image: url(assets/about.jpg);
     background-size: cover;
 }
-#review-section {
+/* #review-section {
     background-image: url(assets/background_04.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 90vh;
-}
+    overflow-y: scroll;
+} */
 
 #menu-section {
     background-image: url(assets/background_1.jpg);
@@ -388,6 +387,7 @@ nav a:hover {
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 .about-us h1 {
+    text-align: center;
     font-size: 2rem; /* Increase font size */
     color: whitesmoke; /* Adjust text color */
     margin-bottom: 20px; /* Add some margin for spacing */
@@ -396,19 +396,23 @@ nav a:hover {
 
 
 .about-us p {
-    padding: 5px 5px;
+    padding: 15px 15px;
     font-size: 1.1rem; 
     color: white; 
     animation: slideIn 1s ease forwards; 
 }
 
 .address {
+    background-color: #222121;
+    padding: 15px 15px;
+    height: 52vh;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px; /* Add some margin for spacing */
+    margin-top: 5px; /* Add some margin for spacing */
     animation: slideIn 1s ease forwards; /* Add slide-in animation */
-    border: 3px solid whitesmoke
+    /* border: 3px solid whitesmoke */
 }
 
 .address:hover {
@@ -465,27 +469,24 @@ nav a:hover {
 }
 
 
-#review-section h1 {
+/* #review-section h1 {
     color: white;
     align-self: flex-start;
-    font-size: 50px;
+    font-size: 1.5em;
     text-align: center;
+    overflow-x: scroll;
     
-    
-}
+} */
 
 #review-section {
-    background-color: white; /* Set background color to white */
-    color: black; /* Set text color to black */
-    padding: 50px; /* Add padding for spacing */
+    background-image: url(assets/background_04.jpeg);
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: row; /* Change flex direction to row */
+    flex-direction: row;
     align-items: center;
-    justify-content: left; /* Remove the comma */
-    width: 100%;
-    height: 90vh;
+    justify-content: space-around; /* Distribute space around flex items */
 }
-
 
 
 #reviewForm {
@@ -532,14 +533,21 @@ nav a:hover {
 }
 
 #reviewsContainer {
-    flex-direction: column;
-    font-size: 30px;
-    color: whitesmoke;
-    border: 10px solid #ddd;
+    /* flex-direction: column; */
+    font-size: 1em;
+    background-color: #ccc;
+    color: rgb(12, 12, 12);
+    border-radius: 15px;
     top: 10px;
-    width: 800%; /* Set width of reviews container */
-    max-width: 600px; /* Limit maximum width */
-    margin-top: 30px; /* Add margin on top for spacing */
+    display: flex;
+    flex-direction: column;
+    /* width: 800%; Remove or adjust this width */
+    max-width: 600px;
+    max-height: 520px;
+    min-height: 520px;
+    margin-top: 30px;
+    padding: 10px;
+    overflow-y: scroll;
 }
 
 #reviewsContainer:hover {

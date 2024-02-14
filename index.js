@@ -125,14 +125,14 @@ function handleFormSubmit(event) {
     
     // Create object from form submit
     const review = {
-      name: name + "🧑‍🦲",
-      menuItem: menuItem + "🍽",
-      rating: rating + " stars"
+      name: name,
+      menuItem: "rated" + menuItem, 
+      rating: "with " + rating + " stars"
     };
-
-   
-   
     
+    
+   
+
     // POST the review data to the server - to be viewed on site after POST
     fetch('http://localhost:3000/reviews', {
       method: 'POST',
@@ -272,12 +272,12 @@ function showDessert (menuData) {
         name.style.fontWeight = "bold";
         name.style.fontSize = '1.3rem'
         name.style.marginBottom = "0";
-         desLi.textContent = dessert.description
-         desLi.style.color = "white"
-         desLi.style.fontSize = '1rem'
-         desLi.style.color = "white"
-            priceLi.textContent = dessert.price
-            priceLi.style.color = "white"
+        desLi.textContent = dessert.description
+        desLi.style.color = "white"
+        desLi.style.fontSize = '1rem'
+        desLi.style.color = "white"
+        priceLi.textContent = dessert.price
+        priceLi.style.color = "white"
 
          ul.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
          ul.style.height = "auto"
