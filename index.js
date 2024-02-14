@@ -284,3 +284,13 @@ function showDessert (menuData) {
         ul.append(name, desLi, priceLi)
     })
 }
+
+//RES 
+
+      document.getElementById("reservationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          document.getElementById("reservationForm").classList.add("hidden");
+          document.getElementById("confirmationMessage")
+          .classList.remove("hidden");
+        });

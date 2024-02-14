@@ -100,6 +100,7 @@ nav a:hover {
 
 .together {
     display: flex;
+    flex-direction: row;
 }
 
 #reservation-section,
@@ -111,12 +112,16 @@ nav a:hover {
 #reservation-section {
     background-image: url(assets/background_02.jpg);
     background-size: cover;
+    height: 100vh;
+    padding: 21px;
    
 }
 
 #about-section {
     background-image: url(assets/about.jpg);
     background-size: cover;
+    height: 100vh;
+    padding: 21px;
 }
 /* #review-section {
     background-image: url(assets/background_04.jpeg);
@@ -478,6 +483,90 @@ nav a:hover {
     
 } */
 
+#reservation-section {
+    padding: 21px;
+    height: 100vh;
+
+}
+
+#reservation-section h1 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease forwards;
+}
+
+#reservationForm {
+    margin-bottom: 0px;
+}
+
+#reservationForm h2 {
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease forwards;
+}
+
+#reservationForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#reservationForm label {
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+#reservationForm input[type="text"],
+#reservationForm input[type="email"],
+#reservationForm input[type="number"],
+#reservationForm input[type="date"],
+#reservationForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#reservationForm select {
+    appearance: none;
+}
+
+#reservationForm input[type="submit"] {
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservationForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#confirmationMessage p {
+    color: whitesmoke;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #review-section {
     background-image: url(assets/background_04.jpeg);
     background-size: cover;
@@ -485,7 +574,8 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; /* Distribute space around flex items */
+    justify-content: space-around; 
+    padding: 100px;
 }
 
 
