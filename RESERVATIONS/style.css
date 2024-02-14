@@ -1,0 +1,67 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+}
+
+/* Centering container */
+.container {
+    max-width: 400px; /* Limit form width to 400px */
+    margin: auto; /* Auto margin will center the container horizontally */
+    padding: 20px;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100%; /* Ensure the container takes full height */
+}
+/* Form styles */
+form {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+   margin-left: 0;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form input[type="date"],
+form input[type="submit"] {
+    width: calc(100% - 22px); /* Adjusting the width to leave space for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Confirmation message styles */
+.confirmation-message {
+    display: none;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center; /* Center text */
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
