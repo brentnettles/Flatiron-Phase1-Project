@@ -66,6 +66,8 @@ chatClosePhone.addEventListener("click", () => document.body.classList.remove("s
 
 sendChatBtn.addEventListener("click", handleChat);
 
+
+//Fetch for menu items
 fetch('http://localhost:3000/menu')
   .then(response => {
     if (!response.ok) {
@@ -147,6 +149,7 @@ function handleFormSubmit(event) {
       document.getElementById('menuItem').selectedIndex = 0;
       document.getElementById('rating').selectedIndex = 0;
       // Refresh displayed reviews
+      
       displayReviews();
     })
     .catch(error => {
@@ -169,6 +172,7 @@ function displayReviews() {
       reviewsContainer.innerHTML = ''; 
       reviews.forEach(review => {
         const reviewElement = document.createElement('div');
+        //interpolation response from review form
         reviewElement.textContent = ` 🤌  ${review.name} gave the ${review.menuItem} a rating of ${review.rating} stars 🌟`;
         reviewsContainer.appendChild(reviewElement);
       });
@@ -208,22 +212,11 @@ fetch(url)
             // Create a new <li> element
             let name = document.createElement("h2");
             let desLi = document.createElement("h3");
-            let priceLi = document.createElement("li");
+            let priceLi = document.createElement("ul");
             // Set the text content of the <li> to the name of the main food
             name.textContent = main.name;
-            name.style.color = "white";
-            name.style.fontWeight = "bold";
-            name.style.fontSize = '1.3rem'
-            name.style.marginBottom = "0";
-             desLi.textContent = main.description
-             desLi.style.color = "white"
-             desLi.style.fontSize = '1rem'
-             desLi.style.color = "white"
-                priceLi.textContent = main.price
-                priceLi.style.color = "white"
-
-             ul.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-             ul.style.height = "auto"
+            desLi.textContent = main.description
+            priceLi.textContent = main.price
              
             // Append the <li> to the <ul>
             ul.append(name, desLi, priceLi);
@@ -237,49 +230,27 @@ function showAppetizer (menuData) {
     menuData.Appetizers.forEach(appetizer => {
         let name = document.createElement("h2");
         let desLi = document.createElement("h3");
-        let priceLi = document.createElement("li");
+        let priceLi = document.createElement("ul");
 
         name.textContent = appetizer.name;
-        name.style.color = "white";
-        name.style.fontWeight = "bold";
-        name.style.fontSize = '1.3rem'
-        name.style.marginBottom = "0";
-         desLi.textContent = appetizer.description
-         desLi.style.color = "white"
-         desLi.style.fontSize = '1rem'
-         desLi.style.color = "white"
-            priceLi.textContent = appetizer.price
-            priceLi.style.color = "white"
+        desLi.textContent = appetizer.description
+        priceLi.textContent = appetizer.price
 
-         ul.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-         ul.style.height = "auto"
         ul.append(name, desLi, priceLi)
     })
 }
 function showDessert (menuData) {
     let ul = document.querySelector("#desul")
-
-    menuData.Desserts.forEach(dessert => {
+    for (let dessert of menuData.Desserts) {
         let name = document.createElement("h2");
         let desLi = document.createElement("h3");
-        let priceLi = document.createElement("li");
-
+        let priceLi = document.createElement("ul");
         name.textContent = dessert.name;
-        name.style.color = "white";
-        name.style.fontWeight = "bold";
-        name.style.fontSize = '1.3rem'
-        name.style.marginBottom = "0";
         desLi.textContent = dessert.description
-        desLi.style.color = "white"
-        desLi.style.fontSize = '1rem'
-        desLi.style.color = "white"
         priceLi.textContent = dessert.price
-        priceLi.style.color = "white"
-
-         ul.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-         ul.style.height = "auto"
         ul.append(name, desLi, priceLi)
-    })
+}
+  
 }
 
 //RESERVATION FORM EVENT LISTENER

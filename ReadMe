@@ -1,5 +1,5 @@
 Phase-1-Project: Le fur plat
-Nail Owski & Brent Nettles
+Nail Osmanli & Brent Nettles
 
 \*Running local json server:
 "start": "json-server --watch ./database/db.json"
@@ -16,12 +16,12 @@ must be added using JavaScript's .addEventListener() method
 At least one instance of array iteration using available array methods (map, forEach, filter, etc)
 
 Site goals:
-It can be frustrating trying to find a restaurant’s menu. Then, once you actually find it (sometimes just a user’s photo of the menu from their visit last year), it’s almost impossible to know that the menu is up to date. Nail & Brento have equipped Le Fur Plat to effortlessly share its everchanging menu offerings and maintain an up-to-date website content to reflect a database managed by the chefs.
+It can be frustrating trying to find a restaurant’s menu. Then, once you actually find it (sometimes just a user’s photo of the menu from their visit last year), it’s almost impossible to know that the menu is up to date. Nail & Brento have equipped Le Fur Plat to effortlessly share its ever-changing menu offerings and maintain an up-to-date website content to reflect a database managed by the chefs.
 
 API:
 FETCH and POST using json-server
 The json contains 3 arrays and 15 objects with 3 attributes (name, description, price).
-Usage: Data to generate the mune & the options for restaurant review
+Usage: Data to generate the menu & the options for restaurant review
 
 eventListener:
 Submit

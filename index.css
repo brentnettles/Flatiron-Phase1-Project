@@ -147,11 +147,13 @@ nav a:hover {
     background-position: center;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: start;
     color: white;
     overflow-y: scroll;
-    padding: 50px;
+    /* padding: 50px; */
     min-height: 700px;
+    /* background-color: (0, 0, 0, .3); */
+   
 }
 
 /*#about-menu {
@@ -174,11 +176,12 @@ nav a:hover {
 }*/
 
 #main-food {
+    background: rgba(0, 0, 0, 0.1);
     align-self: center;
     height: 90vh;
     width: 100%;
     overflow-y: scroll;
-   
+    
 }
 #main-food:hover{
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -187,13 +190,13 @@ nav a:hover {
 #main-food h1 {
     text-align: center;
     flex-direction: row;
-    
     margin-top: 2.5rem;
     color: aliceblue;
 }
 
 
 #appetizer {
+    background: rgba(0, 0, 0, 0.1);
     align-self: center;
     height: 90vh;
     width: 100%;
@@ -206,10 +209,11 @@ nav a:hover {
 #appetizer h1 {
     text-align: center;
     margin-top: 2.5rem;
-    color: aliceblue;
+    color:aliceblue;
 }
 
 #dessert {
+    background: rgba(0, 0, 0, 0.1);
     align-self: center;
     height: 90vh;
     width: 100%;
@@ -519,6 +523,8 @@ nav a:hover {
     animation: slideIn 1s ease forwards;
 }
 
+
+
 #reservationForm {
     margin-bottom: 0px;
 }
@@ -575,11 +581,9 @@ nav a:hover {
 #confirmationMessage p {
     color: whitesmoke;
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    /* text-align: center; */
+    margin-top: 25rem;
+    top: 100px;
+    text-align: center;
 }
 
 /* Animation Keyframes */
