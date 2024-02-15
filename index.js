@@ -99,9 +99,9 @@ function populateMenuItems(menuItems) {
     menuItems.forEach(item => {
         // Create an option element for the menu item
         const option = document.createElement('option');
-        option.value = item.name; // Set the value to the name of the menu item
-        option.textContent = item.name; // Set the text content to the name of the menu item
-        menuItemSelect.appendChild(option); // Append the option to the select element
+        option.value = item.name; 
+        option.textContent = item.name; 
+        menuItemSelect.appendChild(option); 
     });
 }
 
@@ -129,9 +129,6 @@ function handleFormSubmit(event) {
       menuItem: menuItem, 
       rating: rating 
     };
-    
-    
-   
 
     // POST the review data to the server - to be viewed on site after POST
     fetch('http://localhost:3000/reviews', {

@@ -1,0 +1,41 @@
+Phase-1-Project: Le fur plat
+Nail Owski & Brent Nettles
+
+\*Running local json server:
+"start": "json-server --watch ./database/db.json"
+
+-Phase-1 project for Flatiron School-
+
+Project requirements:
+API or from a db.json file using json-server.
+Collection of at least 5 objects, each object having at least 3 attributes
+Contain a single HTML file only
+3 distinct event listeners (3 events of different types)
+event listeners should also have its own unique callback function
+must be added using JavaScript's .addEventListener() method
+At least one instance of array iteration using available array methods (map, forEach, filter, etc)
+
+Site goals:
+It can be frustrating trying to find a restaurant’s menu. Then, once you actually find it (sometimes just a user’s photo of the menu from their visit last year), it’s almost impossible to know that the menu is up to date. Nail & Brento have equipped Le Fur Plat to effortlessly share its everchanging menu offerings and maintain an up-to-date website content to reflect a database managed by the chefs.
+
+API:
+FETCH and POST using json-server
+The json contains 3 arrays and 15 objects with 3 attributes (name, description, price).
+Usage: Data to generate the mune & the options for restaurant review
+
+eventListener:
+Submit
+a) Reservations / send reservation request (HTML)
+b) Reviews / add review (JavaScript)
+
+Click
+a) Navigation / Scroll to Section
+b) Chat Bot / “Send” call for callBack Function
+
+Input
+a) Chat Bot / Anonymous function within chatInput.addEventListener
+
+Array iteration
+Menu / forEach written into the FETCH
+
+- Used to iterate the menuData, parse for the menuItem and to be used as options for the dropdown menu in the reviews section

@@ -15,6 +15,7 @@ body {
 #logo {
     display: flex;
     justify-content: center ;
+    margin:auto ;
     /* font-size: 20px;
     font-weight: bold;
     color: #333;
@@ -146,33 +147,38 @@ nav a:hover {
     background-position: center;
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content:space-between;
     color: white;
+    overflow-y: scroll;
+    padding: 50px;
+    min-height: 700px;
 }
 
-#about-menu {
-    /* align-self: flex-start; */
+/*#about-menu {
+    /* align-self: flex-start; 
     height: 100vh;
     width: 100%;
 }
 
 #about-menu h1 {
-    /* text-align: center; */
+    text-align: center; 
     margin-top: 5rem;
     color: aliceblue;
 }
 #about-menu p {
-    /* align-self:flex-start; */
+    /* align-self:flex-start; 
     margin-top: 1rem;
     width: 100%;
-    /* text-align: center; */
+    /* text-align: center; 
     color: aliceblue;
+}*/
 
-}
 #main-food {
-    /* align-self: flex-start; */
-    height: 100vh;
+    align-self: center;
+    height: 90vh;
     width: 100%;
+    overflow-y: scroll;
+   
 }
 #main-food:hover{
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -180,16 +186,18 @@ nav a:hover {
 
 #main-food h1 {
     text-align: center;
+    flex-direction: row;
+    
     margin-top: 2.5rem;
     color: aliceblue;
 }
 
 
-
 #appetizer {
     align-self: center;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
+    overflow-y: scroll;
    
 }
 #appetizer:hover {
@@ -202,9 +210,10 @@ nav a:hover {
 }
 
 #dessert {
-    align-self: flex-end;
-    height: 100vh;
+    align-self: center;
+    height: 90vh;
     width: 100%;
+    overflow-y: scroll;
 }
 #dessert:hover {
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -566,7 +575,11 @@ nav a:hover {
 #confirmationMessage p {
     color: whitesmoke;
     font-size: 2rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* text-align: center; */
 }
 
 /* Animation Keyframes */
@@ -591,14 +604,14 @@ nav a:hover {
     justify-content: space-around; 
     padding: 100px;
     max-height: 600px;
-    min-height: 600px;
+    min-height: 570px;
 }
 
 
 #reviewForm {
-    width: 80%; /* Set width of form */
+    width: 70%; /* Set width of form */
     max-width: 600px; /* Limit maximum width */
-    padding: 20px; /* Add padding for spacing */
+    padding: 5px; /* Add padding for spacing */
     border: 1px solid #ddd; /* Add border for visual separation */
     border-radius: 10px; /* Add border radius for rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
@@ -613,7 +626,7 @@ nav a:hover {
 
 #reviewForm input[type="text"],
 #reviewForm select {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -650,9 +663,9 @@ nav a:hover {
     flex-direction: column;
     /* width: 800%; Remove or adjust this width */
     max-width: 600px;
-    max-height: 520px;
-    min-height: 520px;
-    margin-top: 30px;
+    max-height: 480px;
+    min-height: 470px;
+    margin-top: 10px;
     padding: 10px;
     overflow-y: scroll;
     

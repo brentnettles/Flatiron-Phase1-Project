@@ -155,6 +155,36 @@
       "name": "Mo H.",
       "menuItem": "Grilled Octopus",
       "rating": "5"
+    },
+    {
+      "id": "b3aa",
+      "name": "Brento",
+      "menuItem": "Moules Mariniére",
+      "rating": "5"
+    },
+    {
+      "id": "d76f",
+      "name": "Guy F",
+      "menuItem": "Moroccan Merguez",
+      "rating": "5"
+    },
+    {
+      "id": "cd35",
+      "name": "Wolfgang P",
+      "menuItem": "Foie Gras Maison",
+      "rating": "5"
+    },
+    {
+      "id": "3ede",
+      "name": "Gordon R",
+      "menuItem": "Paté Maison:",
+      "rating": "4"
+    },
+    {
+      "id": "6265",
+      "name": "Bobby F",
+      "menuItem": "Moroccan Merguez",
+      "rating": "5"
     }
   ]
 }
