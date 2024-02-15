@@ -405,6 +405,7 @@ nav a:hover {
 /* About Section Styles */
 
 #about-section {
+    background: rgba(0, 0, 0, 0.3);
     animation: fadeIn 1s ease forwards; 
 }
 
@@ -505,6 +506,8 @@ nav a:hover {
 } */
 
 #reservation-section {
+    background: rgba(0, 0, 0, 0.3);
+
     /* padding: 21px;
     height: 100vh; */
     display: flex;
